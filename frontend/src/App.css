@@ -1,0 +1,60 @@
+/* Resetando o estilo para uma base mais limpa */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilização para o container principal */
+.recipe-container {
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #e7e687; 
+}
+
+/* Título principal */
+.title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Grid de receitas */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+/* Cartão de receita */
+.recipe-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+/* Imagem da receita */
+.recipe-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Nome da receita */
+.recipe-name {
+  font-size: 1.2rem;
+  color: #333;
+  padding: 10px;
+  background-color: #f5f5f5;
+  margin-top: 0;
+  text-align: center;
+}
